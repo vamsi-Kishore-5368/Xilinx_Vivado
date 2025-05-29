@@ -1,0 +1,72 @@
+Design part : 
+
+
+
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 29.05.2025 09:22:49
+// Design Name: 
+// Module Name: OR
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module OR(input a,input b,output op);
+or a1(op,a,b);
+endmodule
+
+
+
+
+
+Testbench Part : 
+
+
+
+
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 29.05.2025 09:23:36
+// Design Name: 
+// Module Name: OR_Test
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module OR_Test;
+reg A,B;
+wire OP;
+OR i1(A,B,OP);
+initial begin
+A=0; B=0;
+#10 A=0; B=1;
+#10 A=1; B=0;
+#10 A=1; B=1;
+#10 $stop;
+end
+endmodule
+
