@@ -85,5 +85,6 @@ C0=1'b0;
 #10 A=4'b1111; B=4'b1111; C0=1'b0;
 #10 $stop;
 end
+
 endmodule
 
